@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- bootstrap links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Swiper CSS -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./style.css">
@@ -17,19 +19,20 @@
     
 
 
-    <nav class="bg-black bg-opacity-70 fixed w-full z-10">
-        <div class="container mx-auto px-4">
+    <nav class="bg-black fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto px-6 lg:px-12">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <a href="#" class="text-white text-2xl font-bold">Logo</a>
+                <a href="#" class="text-white text-2xl font-bold tracking-wide">Logo</a>
                 <!-- Nav Links -->
                 <div id="menu" class="hidden md:flex space-x-8">
-                    <a href="#" class="text-white hover:text-blue-400">Case studies</a>
-                    <a href="#pricing" class="text-white hover:text-blue-400">Services & Pricing</a>
-                    <a href="#portfolio" class="text-white hover:text-blue-400">Porfolio</a>
+                    <a href="#" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-110">Case studies</a>
+                    <a href="#pricing" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-110">Services & Pricing</a>
+                    <a href="#portfolio" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-110">Portfolio</a>
                 </div>
                 <!-- Contact Button -->
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 hidden md:block">
+                <button class="bg-blue-600 px-6 py-2 rounded-2xl hover:bg-blue-700 shadow-md hidden md:block 
+                transition duration-300 ease-in-out transform hover:scale-105">
                     <i class="fas fa-user-circle mr-2"></i>Contact
                 </button>
                 <!-- Mobile Menu Button -->
@@ -38,15 +41,14 @@
                 </button>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden flex flex-col space-y-4 py-4 bg-black bg-opacity-80 md:hidden">
-                <a href="#" class="text-white hover:text-blue-400 px-4">Case studies</a>
-                <a href="#" class="text-white hover:text-blue-400 px-4">Services & Pricing</a>
-                <a href="#" class="text-white hover:text-blue-400 px-4">Services & Pricing</a>
+            <div id="mobile-menu" class="hidden flex flex-col space-y-4 py-4 bg-black md:hidden px-6">
+                <a href="#" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-105">Case studies</a>
+                <a href="#pricing" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-105">Services & Pricing</a>
+                <a href="#portfolio" class="text-white hover:text-blue-200 transition duration-300 ease-in-out transform hover:scale-105">Portfolio</a>
             </div>
         </div>
     </nav>
     
-
     <!-- Hero Section -->
     <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-screen flex items-center justify-center text-center">
         <div class="bg-black bg-opacity-50 p-8 rounded-lg">
@@ -56,147 +58,128 @@
             <h2 class="text-2xl md:text-3xl text-white">
                 We provide the best services for your business.
             </h2>
-            <button class="mt-8 bg-blue-500 text-black px-8 py-3 rounded-lg hover:bg-blue-200">
-                Get Started
-            </button>
-        </div>
-    </div>
+            <button class="mt-8 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded-2xl shadow-lg 
+               hover:from-blue-700 hover:to-blue-900 transition duration-300 ease-in-out transform hover:scale-105">
+    Get Started
+</button>
 
-    
-    <div class="container min-vh-100 d-flex flex-column justify-content-center" style="padding: 7em;">
-        <div class="row">
-            <div class="col-md-5 mb-5 mb-md-0 text-center">
-                <div class="d-flex align-items-center mb-10 justify-content-center">
-                    <i class="fas fa-chart-bar icon mr-2" style="font-size: 3rem;"></i>
-                    <span class="h3 mb-0">increase sales</span>
-                </div>
-                <div class="d-flex align-items-center mb-10 justify-content-center">
-                    <i class="fas fa-comments icon mr-2" style="font-size: 3rem;"></i>
-                    <span class="h3 mb-0">generate leads</span>
-                </div>
-                <div class="d-flex align-items-center mb-10 justify-content-center">
-                    <i class="fas fa-chart-line icon mr-2" style="font-size: 3rem;"></i>
-                    <span class="h3 mb-0">raise awareness</span>
-                </div>
-                <div class="d-flex align-items-center mb-10 justify-content-center">
-                    <i class="fas fa-users icon mr-2" style="font-size: 3rem;"></i>
-                    <span class="h3 mb-0">build community</span>
-                </div>
-            </div>
-            <div class="col-md-7" id="third">
-                <!-- <h2 class="h3 font-weight-bold mb-3 text-center w-full">
-                    BOOK A FREE APPOINTMENT TO TALK ABOUT <br>
-                    <span class="text-blue-600">PERFORMANCE MARKETING</span> IN YOUR BUSINESS
-                </h2> -->
-                <h1 class="h3 font-weight-bold mb-3 text-center w-full ">
-                    BOOK A FREE APPOINTMENT TO TALK ABOUT
-                    <span class="text-blue-600">PERFORMANCE MARKETING</span> IN YOUR BUSINESS
-                </h1>
-                <form >
-                    <div class="form-group" style="margin-left: 90px;" >
-                        <input class="form-control" placeholder="Ethan Lyons" type="text"/ id="form-input" style="width: 90%;">
-                    </div>
-                    <div class="form-group" style="margin-left:90px;">
-                        <input class="form-control" placeholder="mapifaxosi@mailinator.com" type="email"/ id="form-input" style="width: 90%;">
-                    </div>
-                    <div class="form-group" style="margin-left: 90px;">
-                        <input class="form-control" placeholder="+1 (538) 779-5842" type="tel"/ id="form-input" style="width: 90%;">
-                    </div>
-                    <div class="form-group" style="margin-left: 90px;">
-                        <input class="form-control" placeholder="Rerum voluptate inci" type="text"/ id="form-input" style="width: 90%;">
-                    </div>
-                    <div class="form-group form-check text-center">
-                        <input class="form-check-input" type="checkbox"/>
-                        <label class="form-check-label text-muted x-small" style="font-size: xx-small;">
-                            I consent to the processing of my personal data and understand the <br> administrator's rules for processing my personal data, which are available <br> in the
-                            <a class="text-blue-600" href="#">privacy policy</a>. I agree to recervices and activities through the indicated <br>e-mail address and telephone number.
-                        </label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-custom px-4 py-1" type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-       <div class="text-left ml-[500px]" id="work">
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">WHO DO WE WORK <span class="text-blue-600">WITH?</span></h1>
-        <div class="space-y-4 md:space-y-6 lg:space-y-8">
-            <h3 class="text-lg md:text-xl lg:text-2xl ml-[200px]">international <span class="text-blue-600 font-bold" >E-COMMERCE</span> 27+ industries</h3>
-            <h3 class="text-lg md:text-xl lg:text-2xl ml-[300px]">complicated <span class="text-blue-600 font-bold">B2B</span> long decision-making</h3>
-            <h3 class="text-lg md:text-xl lg:text-2xl ml-[400px]">various <span class="text-blue-600 font-bold">SERVICES</span> local and online</h3>
-            <!-- <h3 class="text-lg md:text-xl lg:text-2xl ml-[500px]">additional <span class="text-blue-600 font-bold">CATEGORY</span> description here</h3> -->
-        </div>
-    </div>
-
-
-<!-- another sec -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    <div class="text-center max-w-2xl mx-auto px-4 relative" >
-        <h1 class="text-4xl font-bold mb-4" style="padding: 20px; margin-top: 60px;" >HIGH YET STABLE <span style="color: #007FFF;">PERFORMANCE</span> <br>
-
-            STEP BY STEP <span style="color: #007FFF;" >GUIDANCE</span> <br> 
             
-            FOCUS ON <span style="color: #007FFF;">RESULTS</span></h1>
-            <h3 class="ad">
-                <SPAN style="background-color: #007FFF; color: rgb(5, 5, 5); font-weight: bolder;font-size: xx-large; margin-left: 120px;margin-top: 0;"> ADS</SPAN><span style="background-color: #050505; color: #007FFF;font-weight: bolder;font-size: xx-large; border-color: #007FFF ;border: solid;">VENTURE</span>
-             </h3>
-     
-        <h2 class="text-2xl font-bold mb-4">
-            CLIENTS ABOUT <span class="text-blue-600">US</span>
-        </h2>
-        
-        <div id="slider" class="text-lg mb-40">
-            <!-- Only one paragraph here -->
-            <p id="slider-content" class="slider-item fade-in">
-                We have been working with Adsventure for over six months now. We are very satisfied with the course of this cooperation, the punctuality and conscientiousness of the people responsible for our projects. Both AdWords campaigns and those on Facebook achieve high results. We recommend!
-            </p>
         </div>
-<!-- Left Arrow (Previous) -->
-<div class="absolute left-[-40px] top-[75%] transform -translate-y-1/2">
-    <i id="prev" class="fas fa-chevron-left text-white text-5xl cursor-pointer"></i>
+    </div>
+<!-- 3rd -->
+    
+<div class="container min-vh-100 d-flex flex-column justify-content-center px-3 px-md-5">
+    <div class="row justify-content-center align-items-center">
+        <!-- Centered Heading -->
+        <h1 class="display-5 font-weight-bold text-center mb-4 text-uppercase text-primary w-100">
+            Book A Free Appointment To Discuss <br> 
+            <span class="text-white">Performance Marketing</span>
+        </h1>
+
+        <!-- Left Section with Icons (Properly Aligned) -->
+        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex flex-column align-items-start">
+            <div class="feature d-flex align-items-center text-primary p-3">
+                <i class="fas fa-chart-bar mr-3" style="font-size: 3rem; width: 50px; text-align: center;"></i>
+                <span class="h3 mb-0 font-weight-bold text-white">Increase Sales</span>
+            </div>
+            <div class="feature d-flex align-items-center text-primary p-3">
+                <i class="fas fa-comments mr-3" style="font-size: 3rem; width: 50px; text-align: center;"></i>
+                <span class="h3 mb-0 font-weight-bold text-white">Generate Leads</span>
+            </div>
+            <div class="feature d-flex align-items-center text-primary p-3">
+                <i class="fas fa-chart-line mr-3" style="font-size: 3rem; width: 50px; text-align: center;"></i>
+                <span class="h3 mb-0 font-weight-bold text-white">Raise Awareness</span>
+            </div>
+            <div class="feature d-flex align-items-center text-primary p-3">
+                <i class="fas fa-users mr-3" style="font-size: 3rem; width: 50px; text-align: center;"></i>
+                <span class="h3 mb-0 font-weight-bold text-white">Build Community</span>
+            </div>
+        </div>
+
+        <!-- Right Section (Form Properly Centered) -->
+        <div class="col-md-5">
+            <form class="w-100">
+                <div class="form-group">
+                    <input class="form-control input-hover" placeholder="Your Name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control input-hover" placeholder="Your Email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control input-hover" placeholder="Your Phone Number" type="tel" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control input-hover" placeholder="Your Message" type="text">
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                    <input class="mr-2" type="checkbox" required>
+                    <label class="text-muted small mb-0">
+                        I consent to the processing of my personal data and understand the 
+                        <a class="text-primary" href="#">privacy policy</a>.
+                    </label>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary px-5 py-2 shadow-lg hover-effect rounded-2xl" type="submit">
+                        <i class="fas fa-paper-plane mr-2"></i>Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
-<!-- Right Arrow (Next) -->
-<div class="absolute right-[-40px] top-[75%] transform -translate-y-1/2">
-    <i id="next" class="fas fa-chevron-right text-white text-5xl cursor-pointer"></i>
+
+<!-- small para 4 section -->
+
+
+<div class="w-full max-w-lg md:w-[600px] md:h-auto flex flex-col items-center justify-center text-center 
+            border-2 border-blue-600 rounded-lg p-6 shadow-lg mx-auto 
+            transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-blue-800" id="work">
+    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6">
+        WHO DO WE WORK <span class="text-blue-600">WITH?</span>
+    </h1>
+    <div class="space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 w-full" id="work-lines">
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl border-b-2 border-gray-300 pb-2 
+                  transition-all duration-300 hover:text-blue-600">
+            International <span class="text-blue-600 font-bold">E-COMMERCE</span> – 27+ industries
+        </h3>
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl border-b-2 border-gray-300 pb-2 
+                  transition-all duration-300 hover:text-blue-600">
+            Complicated <span class="text-blue-600 font-bold">B2B</span> – long decision-making
+        </h3>
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-600">
+            Various <span class="text-blue-600 font-bold">SERVICES</span> – local and online
+        </h3>
+    </div>
 </div>
+
+
+<!-- section 5 -->
+
+<div class="text-center max-w-2xl mx-auto px-4 relative">
+    <h1 class="text-4xl sm:text-3xl md:text-4xl font-bold mb-4 px-5 mt-10">HIGH YET STABLE <span class="text-blue-500">PERFORMANCE</span> <br>
+        STEP BY STEP <span class="text-blue-500">GUIDANCE</span> <br> 
+        FOCUS ON <span class="text-blue-500">RESULTS</span></h1>
+    
+    <h3 class="flex justify-center items-center space-x-2 mt-4">
+        <span class="bg-blue-500 text-black font-bold text-xl sm:text-lg px-4 py-2">ADS</span>
+        <span class="bg-black text-blue-500 font-bold text-xl sm:text-lg px-4 py-2 border border-blue-500">VENTURE</span>
+    </h3>
+    
+    <h2 class="text-2xl sm:text-xl font-bold my-6">CLIENTS ABOUT <span class="text-blue-600">US</span></h2>
+    
+    <div id="slider" class="text-lg sm:text-base mb-20">
+        <p id="slider-content" class="slider-item fade-in px-4">
+            We have been working with Adsventure for over six months now. We are very satisfied with the course of this cooperation, the punctuality and conscientiousness of the people responsible for our projects. Both AdWords campaigns and those on Facebook achieve high results. We recommend!
+        </p>
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <div class="absolute left-4 sm:left-1 top-1/2 transform -translate-y-1/2">
+        <i id="prev" class="fas fa-chevron-left text-white text-3xl sm:text-2xl cursor-pointer"></i>
+    </div>
+    <div class="absolute right-4 sm:right-1 top-1/2 transform -translate-y-1/2">
+        <i id="next" class="fas fa-chevron-right text-white text-3xl sm:text-2xl cursor-pointer"></i>
     </div>
 </div>
 
@@ -207,159 +190,115 @@
 
 
 
-<!--  -->
+<!-- pricing section 6  -->
 <div class="text-center w-full md:w-3/5 mx-auto" id="pricing">
-    <h1 class="text-blue-600 text-3xl font-bold mb-8 mt-6" >
-        PRICING
-    </h1>
+    <h1 class="text-blue-600 text-3xl font-bold mb-6 mt-6">PRICING</h1>
     <div class="overflow-x-auto">
-        <table class="w-full text-lg bg-black text-white border-collapse" style="height: 10%;">
+        <table class="w-full text-base bg-black text-white border-collapse shadow-lg rounded-lg">
             <thead>
                 <tr class="bg-black text-blue-600 border-b-2 border-blue-600">
-                    <th class="p-4 border-r-2 border-white">Plan</th>
-                    <th class="p-4 border-r-2 border-white">Advertising Channels</th>
-                    <th class="p-4 border-r-2 border-white">Minimum Agency Fee</th>
-                    <th class="p-4 border-white">Minimum Media Budget</th>
+                    <th class="p-3 border-r border-gray-600">Plan</th>
+                    <th class="p-3 border-r border-gray-600">Advertising Channels</th>
+                    <th class="p-3 border-r border-gray-600">Agency Fee</th>
+                    <th class="p-3">Media Budget</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="border-b border-black">
-                    <td class="p-4 border-r-2 border-white font-bold">BASIC</td>
-                    <td class="p-4 border-r-2 border-white">1 ADVERTISING CHANNEL</td>
-                    <td class="p-4 border-r-2 border-white font-bold">€600 MONTHLY</td>
-                    <td class="p-4 border-white font-bold">€1000 MONTHLY</td>
+                <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+                    <td class="p-3 border-r border-gray-600 font-bold">BASIC</td>
+                    <td class="p-3 border-r border-gray-600">1 Channel</td>
+                    <td class="p-3 border-r border-gray-600 font-bold">€600/M</td>
+                    <td class="p-3 font-bold">€1000/M</td>
                 </tr>
-                <tr class="border-b border-black">
-                    <td class="p-4 border-r-2 border-white font-bold">ADVANTAGE</td>
-                    <td class="p-4 border-r-2 border-white">2 ADVERTISING CHANNELS</td>
-                    <td class="p-4 border-r-2 border-white font-bold">€950 MONTHLY</td>
-                    <td class="p-4 border-white font-bold">€1000 MONTHLY</td>
+                <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+                    <td class="p-3 border-r border-gray-600 font-bold">ADVANTAGE</td>
+                    <td class="p-3 border-r border-gray-600">2 Channels</td>
+                    <td class="p-3 border-r border-gray-600 font-bold">€950/M</td>
+                    <td class="p-3 font-bold">€1000/M</td>
                 </tr>
-                <!-- <tr>
-                    <td class="p-4 border-r-2 border-white font-bold">SYNERGY</td>
-                    <td class="p-4 border-r-2 border-white">3+ ADVERTISING CHANNELS</td>
-                    <td class="p-4 border-r-2 border-white font-bold">€1300 MONTHLY</td>
-                    <td class="p-4 border-white font-bold">€2000 MONTHLY</td>
-                </tr> -->
             </tbody>
         </table>
     </div>
 </div>
-     <!-- <div class="p-2">
-      <h2 class="font-bold">
-       LANDING PAGE
-      </h2>
-      <p>
-       ADDITIONAL SERVICE
-      </p>
-      <p class="my-2 border-gray-700" style="width: 90px;">
-       <hr />
-      </p>
-      <p style="margin-top: 30px;">
-       MINIMUM FEE:
-      </p>
-      <p class="font-bold">
-       €500 MONTHLY
-      </p>
-     </div>
+
+<div class="text-center mt-12 w-full md:w-3/5 mx-auto">
+    <h2 class="text-3xl font-bold mb-4">ADVERTISING <span class="text-blue-600">CHANNELS</span> WE WORK WITH</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+        <div class="flex flex-col items-center hover:scale-110 transition-transform">
+            <i class="fab fa-google text-blue-600 text-4xl"></i>
+            <p class="mt-2 text-sm">Google Ads</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-110 transition-transform">
+            <i class="fab fa-facebook text-blue-600 text-4xl"></i>
+            <p class="mt-2 text-sm">Meta Ads</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-110 transition-transform">
+            <i class="fab fa-linkedin text-blue-600 text-4xl"></i>
+            <p class="mt-2 text-sm">LinkedIn Ads</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-110 transition-transform">
+            <i class="fab fa-tiktok text-blue-600 text-4xl"></i>
+            <p class="mt-2 text-sm">TikTok Ads</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-110 transition-transform">
+            <i class="fab fa-youtube text-blue-600 text-4xl"></i>
+            <p class="mt-2 text-sm">YouTube Ads</p>
+        </div>
     </div>
-   </div> -->
-   <div class="text-center mt-12 w-full md:w-3/5" style="margin-left: 19em;">
-    <h2 class="text-3xl font-bold mb-4">
-     ADVERTISING
-     <span class="text-blue-600">
-      CHANNELS
-     </span>
-     WE WORK WITH
-    </h2>
-    <div class="flex flex-wrap justify-center gap-4" >
-     <div class="flex flex-col items-center">
-      <i class="fab fa-google w-10 h-10 text-blue-600 text-4xl"></i>
-      <p class="mt-2 text-sm">
-       Google Ads
-      </p>
-     </div>
-     <div class="flex flex-col items-center">
-      <i class="fab fa-facebook w-10 h-10 text-blue-600 text-4xl"></i>
-      <p class="mt-2 text-sm">
-       Meta Ads
-      </p>
-     </div>
-     <div class="flex flex-col items-center">
-      <i class="fab fa-linkedin w-10 h-10 text-blue-600 text-4xl"></i>
-      <p class="mt-2 text-sm">
-       LinkedIn Ads
-      </p>
-     </div>
-     <div class="flex flex-col items-center">
-      <i class="fab fa-tiktok w-10 h-10  text-blue-600 text-4xl"></i>
-      <p class="mt-2 text-sm">
-       TikTok Ads
-      </p>
-     </div>
-     <div class="flex flex-col items-center">
-      <i class="fab fa-youtube w-10 h-10 text-blue-600 text-4xl"></i>
-      <p class="mt-2 text-sm">
-       YouTube Ads
-      </p>
-     </div>
-    </div>
-   </div>
-<!--  last-->
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- section 7 -->
 
 <div class="text-center py-10" style="margin-top: 70px;">
-    <h2 class="text-xl font-bold" style="font-size: 30px;">THEY ALREADY <span class="text-blue-600">TRUSTED US</span></h2>
+    <h2 class="text-xl font-bold text-3xl">THEY ALREADY <span class="text-blue-600">TRUSTED US</span></h2>
     <div class="flex justify-center items-center mt-9">
-        <!-- <i class="fas fa-chevron-left text-2xl mx-4 cursor-pointer"></i> -->
-        <div class="flex space-x-8 slider" style="margin-left: 30rem;">
-            <img alt="Logo of Felizajob" class="h-12 cursor-pointer" height="50" src="https://storage.googleapis.com/a1aa/image/8glWz7veGSyvmRufAOha-siYs6lsCfhGu05ktnmNuJw.jpg" width="100"/>
-            <img alt="Logo of HD" class="h-12 cursor-pointer" height="50" src="https://storage.googleapis.com/a1aa/image/PolbXcaFh2iwZUkThEjxVdIQnjZWWvKTD_C1ouvFxTI.jpg" width="100"/>
-            <img alt="Logo of Modynkon" class="h-12 cursor-pointer" height="50" src="https://storage.googleapis.com/a1aa/image/DHbpP8Kk78ndWDR_RabG5F5VV5mmgx_0qi08krd0mFo.jpg" width="100"/>
-            <img alt="Logo of In Pref" class="h-12 cursor-pointer" height="50" src="https://storage.googleapis.com/a1aa/image/UpoEtvxmZRyVuP6TNgqP-SYbKbF9PpXegAmGfTebwUI.jpg" width="100"/>
-            <img alt="Logo of Sun Harvest" class="h-12 cursor-pointer" height="50" src="https://storage.googleapis.com/a1aa/image/5VePRR1MQuZz4qDywRsb4KV3wp34XSheSLWLdMVhSno.jpg" width="100"/>
+        <div class="flex justify-center space-x-8 slider animate-pulse">
+            <div class="flex flex-col items-center hover:scale-110 transition-transform hover:text-blue-200">
+                <i class="fas fa-briefcase text-blue-600 text-5xl"></i>
+                <p class="mt-2 text-sm">Felizajob</p>
+            </div>
+            <div class="flex flex-col items-center hover:scale-110 transition-transform hover:text-blue-200">
+                <i class="fas fa-building text-blue-600 text-5xl"></i>
+                <p class="mt-2 text-sm">HD</p>
+            </div>
+            <div class="flex flex-col items-center hover:scale-110 transition-transform hover:text-blue-200">
+                <i class="fas fa-industry text-blue-600 text-5xl"></i>
+                <p class="mt-2 text-sm">Modynkon</p>
+            </div>
+            <div class="flex flex-col items-center hover:scale-110 transition-transform hover:text-blue-200">
+                <i class="fas fa-handshake text-blue-600 text-5xl"></i>
+                <p class="mt-2 text-sm">In Pref</p>
+            </div>
+            <div class="flex flex-col items-center hover:scale-110 transition-transform hover:text-blue-200">
+                <i class="fas fa-sun text-blue-600 text-5xl"></i>
+                <p class="mt-2 text-sm">Sun Harvest</p>
+            </div>
         </div>
-        <!-- <i class="fas fa-chevron-right text-2xl mx-4 cursor-pointer"></i> -->
     </div>
 </div>
+<!-- section 8 -->
+
 <div class="text-center py-10" id="portfolio">
-    <h2 class="text-lg font-bold" style="font-size: 40px;">PROVEN TIMELINE OF <span class="text-blue-600">SUCCESSFUL COOPERATION</span></h2>
-    <div class="mt-6">
-        <div class="flex justify-center space-x-4" style="margin-left: 3em;">
-            <div class="text-right" style="font-size: larger; margin-top: 50px; padding: 20px;">
-                <p>3 WORKING DAYS →</p>
-                <p>5 WORKING DAYS →</p>
-                <p>ON DAILY BASIS →</p>
-                <p>MONTHLY →</p>
-            </div>
-            <div class="text-left">
-                <p class="text-blue-600 " style="font-size: 35px;" >1<span style="color: white; font-size: 20px;font-weight: 400;"> ONLINE MEETING</span></p>
-                <p class="text-blue-600"style="font-size: 35px;">2<span  style="color: white; font-size: 20px;font-weight: 400;"> STRATEGY</span> </p>
-                <p class="text-blue-600" style="font-size: 35px;">3<span  style="color: white; font-size: 20px;font-weight: 400;"> IMPLEMENTATION</span> </p>
-                <p class="text-blue-600" style="font-size: 35px;">4<span  style="color: white; font-size: 20px;font-weight: 400;"> OPTIMIZATION</span> </p>
-                <p class="text-blue-600" style="font-size: 35px;">5<span  style="color: white; font-size: 20px;font-weight: 400;"> REPORTS</span> </p>
-                <p class="text-blue-600" style="font-size: 35px;">6<span  style="color: white; font-size: 20px;font-weight: 400;">  SUCCESS</span> </p>
-                <p class="text-blue-600" style="font-size: 35px;">7<span  style="color: white; font-size: 20px;font-weight: 400;"> SCALING</span> </p>
-            
-            </div>
-            <p class="mt-7 text-blue-500 "  style="margin-top: 17em;"  >← 3 TO 6 MONTHS</p>
+    <h2 class="text-lg font-bold text-6xl tracking-wide">PROVEN TIMELINE OF <span class="text-blue-600">SUCCESSFUL COOPERATION</span></h2>
+    <div class="mt-8 flex justify-center items-center space-x-10">
+        <div class="text-right text-lg font-semibold space-y-6">
+            <p class="transition-transform hover:scale-110 hover:text-blue-200">3 WORKING DAYS →</p>
+            <p class="transition-transform hover:scale-110 hover:text-blue-200">5 WORKING DAYS →</p>
+            <p class="transition-transform hover:scale-110 hover:text-blue-200">ON DAILY BASIS →</p>
+            <p class="transition-transform hover:scale-110 hover:text-blue-200">MONTHLY →</p>
         </div>
-        
+        <div class="text-left space-y-6">
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">1<span class="text-white text-lg font-normal"> ONLINE MEETING</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">2<span class="text-white text-lg font-normal"> STRATEGY</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">3<span class="text-white text-lg font-normal"> IMPLEMENTATION</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">4<span class="text-white text-lg font-normal"> OPTIMIZATION</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">5<span class="text-white text-lg font-normal"> REPORTS</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">6<span class="text-white text-lg font-normal"> SUCCESS</span></p>
+            <p class="text-blue-600 text-4xl font-bold hover:text-blue-200">7<span class="text-white text-lg font-normal"> SCALING</span></p>
+        </div>
+        <p class="text-blue-500 text-lg font-semibold transition-transform hover:scale-110 hover:text-blue-200">← 3 TO 6 MONTHS</p>
     </div>
 </div>
 
@@ -371,71 +310,85 @@
 
 
 
-
+<!-- para start section 9 -->
 <div class="container mx-auto px-4 py-8">
     <div class="text-center">
-     <h1 class="text-3xl font-bold mb-4">
-      WHY IS IT
-      <span class="text-blue-500">
-       WORTH
-      </span>
-      TO TALK TO US?
-     </h1>
-     <p class="text-lg mb-8" style="width: 50%; margin-left: 23rem; margin-bottom: 90px;">
-      We're your
-      <span class="text-blue-500">
-       usher
-      </span>
-      in the vast and quickly changing online world. We focus on your success and
-      <span class="text-blue-500">
-       specific effects
-      </span>
-      . You can count on us from strategy to implementation, with
-      <span class="text-blue-500">
-       full responsibility
-      </span>
-      on our side. No excuses.
-     </p>
-    </div>
-    <div class="flex flex-col md:flex-row items-center justify-center" style="width: 50%; height: 40%; margin-left: 25em;">
-     <div class="w-full md:w-1/2 mb-8 md:mb-0">
-      <h2 class="text-xl font-bold mb-4">
-       BOOK A FREE APPOINTMENT WITH OUR
-       <span class="text-blue-500">
-        SPECIALIST
-       </span>
-      </h2>
-      <form class="space-y-3"   >
-       <input class="w-full p-2 bg-black border border-gray-500 text-white" placeholder="name" type="text"/>
-       <input class="w-full p-2 bg-black border border-gray-500 text-white" placeholder="e-mail address" type="email"/>
-       <input class="w-full p-2 bg-black border border-gray-500 text-white" placeholder="phone number" type="tel"/>
-       <textarea class="w-full p-2 bg-black border border-gray-500 text-white" placeholder="message"></textarea>
-       <div class="flex items-start">
-        <input class="mr-2" type="checkbox"/>
-        <p class="text-xs text-gray-400">
-         I consent to the processing of my personal data and understand the privacy policy. I agree to receive information about administrator's services and activities through the indicated e-mail address and telephone number.
+        <h1 class="text-4xl font-bold mb-6 transition-transform hover:scale-105 hover:text-blue-400">
+            WHY IS IT
+            <span class="text-blue-500">
+                WORTH
+            </span>
+            TO TALK TO US?
+        </h1>
+        <p class="text-lg mb-8 w-1/2 mx-auto transition-transform hover:scale-105 hover:text-blue-400">
+            We're your
+            <span class="text-blue-500">
+                usher
+            </span>
+            in the vast and quickly changing online world. We focus on your success and
+            <span class="text-blue-500">
+                specific effects
+            </span>.
+            You can count on us from strategy to implementation, with
+            <span class="text-blue-500">
+                full responsibility
+            </span>
+            on our side. No excuses.
         </p>
-       </div>
-      </form>
-     </div>
-     <div class="w-full md:w-1/2 flex justify-center" style="margin-left: 50px;">
-      <img alt="Portrait of a specialist in a black suit" class="rounded-lg" height="400" src="./assets/man-img.png" width="400" />
-     </div>
     </div>
-   </div>
+</div>
+    <!-- pARA end -->
+     <!-- form section start -->
+     <div class="flex flex-col md:flex-row items-center justify-center w-1/2 mx-auto">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">BOOK A FREE APPOINTMENT WITH OUR
+                <span class="text-blue-500">SPECIALIST</span>
+            </h2>
+            <form class="space-y-3" id="appointment-form">
+                <input class="w-full p-2 bg-black border border-gray-500 text-white rounded-md transition-all hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Name" type="text" id="name" required/>
+                <input class="w-full p-2 bg-black border border-gray-500 text-white rounded-md transition-all hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="E-mail Address" type="email" id="email" required/>
+                <input class="w-full p-2 bg-black border border-gray-500 text-white rounded-md transition-all hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number" type="tel" id="phone" required/>
+                <textarea class="w-full p-2 bg-black border border-gray-500 text-white rounded-md transition-all hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Message" id="message" required></textarea>
+                <div class="flex items-start">
+                    <input class="mr-2" type="checkbox" id="consent" required/>
+                    <p class="text-xs text-gray-400">
+                        I consent to the processing of my personal data and understand the privacy policy. I agree to receive information about administrator's services and activities through the indicated e-mail address and telephone number.
+                    </p>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">Submit</button>
+            </form>
+            <p id="success-message" class="hidden text-green-500 mt-2">Your form has been submitted successfully!</p>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center md:ml-6">
+            <img alt="Portrait of a specialist in a black suit" class="rounded-lg" height="400" src="./assets/man-img.png" width="400" />
+        </div>
+    </div>
+</div>
 
 
 
-   <div class="border-t border-yellow-500 w-full mt-4"></div>
-   <div class="flex justify-center items-center mt-4 w-full max-w-4xl mx-auto px-4">
-       <p class="text-white text-sm text-center mr-4">
-           This site uses cookies to provide the highest level of service. You agree to their use by using this site.
-       </p>
-       <button class="bg-yellow-500 text-black px-4 py-2">
-           Consent
-       </button>
-   </div>
 
+
+<!-- footer -->
+<footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+        <div class="mb-6 md:mb-0">
+            <h2 class="text-2xl font-bold">Company Name</h2>
+            <p class="text-gray-400">Your trusted partner for digital success.</p>
+        </div>
+        <div class="flex space-x-6 text-xl">
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="text-gray-400 text-sm">
+            <p><i class="fas fa-map-marker-alt text-blue-500"></i> 123 Business Street, City, Country</p>
+            <p><i class="fas fa-phone text-blue-500"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope text-blue-500"></i> contact@company.com</p>
+        </div>
+    </div>
+</footer>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

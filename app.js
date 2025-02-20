@@ -63,10 +63,17 @@ showCard(currentIndex);
 
 
 
+// form validations
+document.getElementById("appointment-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("success-message").classList.remove("hidden");
+    setTimeout(() => {
+        document.getElementById("success-message").classList.add("hidden");
+        document.getElementById("appointment-form").reset();
+    }, 3000);
+});
 
-
-
-// ndjsncjfsncjv
+// /////
 const logos = document.querySelectorAll('#logos img');
         let currentIndexs = 0;
 
