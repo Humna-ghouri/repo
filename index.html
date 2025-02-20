@@ -193,8 +193,9 @@
 <!-- pricing section 6  -->
 <div class="text-center w-full md:w-3/5 mx-auto" id="pricing">
     <h1 class="text-blue-600 text-3xl font-bold mb-6 mt-6">PRICING</h1>
-    <div class="overflow-x-auto">
-        <table class="w-full text-base bg-black text-white border-collapse shadow-lg rounded-lg">
+    
+    <div class="w-full">
+        <table class="hidden md:table w-full text-base bg-black text-white border-collapse shadow-lg rounded-lg">
             <thead>
                 <tr class="bg-black text-blue-600 border-b-2 border-blue-600">
                     <th class="p-3 border-r border-gray-600">Plan</th>
@@ -218,6 +219,23 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- Mobile Responsive Cards -->
+        <div class="md:hidden space-y-6">
+            <div class="bg-black text-white p-4 rounded-lg shadow-lg">
+                <h2 class="text-blue-600 font-bold text-xl">BASIC</h2>
+                <p class="mt-2"><span class="font-semibold">Advertising Channels:</span> 1 Channel</p>
+                <p class="mt-1"><span class="font-semibold">Agency Fee:</span> €600/M</p>
+                <p class="mt-1"><span class="font-semibold">Media Budget:</span> €1000/M</p>
+            </div>
+
+            <div class="bg-black text-white p-4 rounded-lg shadow-lg">
+                <h2 class="text-blue-600 font-bold text-xl">ADVANTAGE</h2>
+                <p class="mt-2"><span class="font-semibold">Advertising Channels:</span> 2 Channels</p>
+                <p class="mt-1"><span class="font-semibold">Agency Fee:</span> €950/M</p>
+                <p class="mt-1"><span class="font-semibold">Media Budget:</span> €1000/M</p>
+            </div>
+        </div>
     </div>
 </div>
 
